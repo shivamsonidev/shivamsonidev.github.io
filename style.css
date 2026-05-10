@@ -14,10 +14,10 @@ html { font-size: 16px; scroll-behavior: smooth; }
   --ease:   cubic-bezier(.22,1,.36,1);
 }
 
-body { font-family: var(--fd); background: var(--ink); color: var(--white); overflow-x: hidden; cursor: none; }
+body { font-family: var(--fd); background: var(--ink); color: var(--white); overflow-x: hidden; }
 
 /* ── CURSOR ── */
-#cur, #cur-r {
+/* #cur, #cur-r {
   position: fixed; border-radius: 50%; pointer-events: none; z-index: 9999;
   transform: translate(-50%,-50%);
 }
@@ -27,7 +27,7 @@ body { font-family: var(--fd); background: var(--ink); color: var(--white); over
   border: 1.5px solid rgba(28,143,250,.45);
   transition: width .35s var(--ease), height .35s var(--ease), border-color .2s;
 }
-body:has(a:hover) #cur-r, body:has(button:hover) #cur-r { width: 64px; height: 64px; border-color: var(--blue); }
+body:has(a:hover) #cur-r, body:has(button:hover) #cur-r { width: 64px; height: 64px; border-color: var(--blue); } */
 
 /* ── REVEAL ── */
 .rv  { opacity: 0; transform: translateY(40px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
