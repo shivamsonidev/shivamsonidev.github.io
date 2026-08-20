@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness is Luxury | Premium Lifestyle & Hormone Health Coaching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0d0e12',
+                            card: '#16181f',
+                            cardBorder: '#262936',
+                            gold: '#d4af37',
+                            goldHover: '#f3ca40',
+                            accent: '#e2b857',
+                            muted: '#9ca3af',
+                            lightBg: '#f8f9fa'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0d0e12;
+            color: #f3f4f6;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff 30%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+        }
+        
+        /* Ticker Animation */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-scroll {
+            animation: scroll 20s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-gray-100 antialiased selection:bg-brand-gold selection:text-black">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-gradient-to-r from-amber-900/40 via-brand-gold/20 to-amber-900/40 border-b border-brand-gold/30 text-xs sm:text-sm py-2 px-4 text-center text-amber-200">
+        <span class="font-semibold tracking-wide">EXCLUSIVE 1:1 COACHING:</span> Private Strategy Spots Open for Professional Women (25–36). 
+        <a href="#strategy-call" class="underline hover:text-white ml-2 font-bold">Apply For Intake &rarr;</a>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full border border-brand-gold/50 flex items-center justify-center bg-brand-card text-brand-gold font-sans font-extrabold text-xl">
+                    F
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-sans font-extrabold text-lg tracking-wider text-white">FITNESS IS LUXURY</span>
+                    <span class="text-[10px] tracking-widest text-brand-gold uppercase font-semibold">Rushali Chaudhary</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#philosophy" class="hover:text-brand-gold transition-colors">Philosophy</a>
+                <a href="#framework" class="hover:text-brand-gold transition-colors">H.A.R.M.O.N.Y Method</a>
+                <a href="#transformations" class="hover:text-brand-gold transition-colors">Results</a>
+                <a href="#programs" class="hover:text-brand-gold transition-colors">Programs</a>
+                <a href="#faq" class="hover:text-brand-gold transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Header Action CTA -->
+            <div class="flex items-center gap-4">
+                <a href="#strategy-call" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase bg-brand-gold text-black hover:bg-brand-goldHover transition-all transform hover:-translate-y-0.5">
+                    Book Strategy Call
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/30 text-brand-gold text-xs font-semibold tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+                    Science-Backed Women's Metabolic Coaching
+                </div>
+
+                <h1 class="font-sans text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight tracking-tight">
+                    Redefine Your Body, <br>
+                    <span class="gold-gradient-text">Harmonize Your Health.</span>
+                </h1>
+
+                <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl font-light">
+                    A tailored, culturally-aligned lifestyle blueprint designed exclusively for busy working women aged 25–36. Balance PCOS, thyroid, and period health while enjoying home-cooked meals—without restrictive crash diets or burnout.
+                </p>
+
+                <!-- Value Highlights Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-white/10 text-xs sm:text-sm text-gray-400 font-medium">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>No Rigid Diets</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Home Indian Meals</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-brand-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Daily WhatsApp Support</span>
+                    </div>
+                </div>
+
+                <!-- CTAs -->
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#strategy-call" class="inline-flex items-center justify-center px-8 py-4 rounded-full text-sm font-bold tracking-wider uppercase bg-brand-gold text-black hover:bg-brand-goldHover transition-all gold-border-glow text-center">
+                        Claim Your 60-Min Strategy Call
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Image Banner Showcase -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-brand-card p-3">
+                    <img src="https://www.fitnessisluxury.com/wp-content/uploads/2024/01/rushali-main.jpg" 
+                         alt="Rushali Chaudhary - Master Trainer" 
+                         class="w-full h-[480px] object-cover rounded-xl filter contrast-105"
+                         onerror="this.onerror=null; this.src='./rush.png';">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-brand-dark/95 backdrop-blur-md border border-brand-gold/30">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-brand-gold/20 flex items-center justify-center text-brand-gold font-bold">
+                                20+
+                            </div>
+                            <div>
+                                <p class="text-xs text-brand-gold font-bold uppercase tracking-wider">Master Personal Trainer</p>
+                                <p class="text-sm font-semibold text-white">Diploma in Lifestyle & Nutrition</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Authority Grid -->
+    <section id="philosophy" class="py-20 bg-brand-card/50 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-brand-gold font-bold mb-2">Targeted Coaching Pathways</h2>
+                <h3 class="font-sans text-3xl sm:text-5xl font-extrabold">Designed Specially For Your Unique Lifecycle</h3>
+                <p class="text-gray-400 mt-4 text-sm sm:text-base font-medium">We don't offer generic gym templates. Every path is customized around your hormonal profile, schedule, and lifestyle requirements.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-cardBorder hover:border-brand-gold/40 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="font-sans text-xl font-bold mb-3">Corporate & Professional Women</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 font-medium">High-stress routines, frequent travel, and long seated hours. We build rapid 30-minute workout routines and smart dining-out frameworks.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-cardBorder hover:border-brand-gold/40 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h4 class="font-sans text-xl font-bold mb-3">PCOS, Thyroid & Period Health</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 font-medium">Targeted metabolic restoration to reverse period pain, stubborn gut inflammation, extreme fatigue, and hormonal weight fluctuations.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-brand-card border border-brand-cardBorder hover:border-brand-gold/40 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-brand-gold/10 border border-brand-gold/20 flex items-center justify-center text-brand-gold mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h4 class="font-sans text-xl font-bold mb-3">Sustainable Postpartum & Life Reset</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6 font-medium">Rebuild core strength, restore posture, and fix metabolic slowing for mothers and working women needing long-term lifestyle permanence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: How It Works Walkthrough -->
+    <section class="py-20 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">The Process</span>
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold mt-2">How We Work Together in 3 Steps</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-white/10 -translate-y-1/2 z-0"></div>
+
+                <div class="relative z-10 bg-brand-dark px-4 text-center">
+                    <div class="w-16 h-16 mx-auto bg-brand-card border-2 border-brand-gold rounded-full flex items-center justify-center text-brand-gold font-bold text-xl mb-4">1</div>
+                    <h4 class="font-bold text-lg mb-2">Book Your Strategy Call</h4>
+                    <p class="text-sm text-gray-400">We analyze your history, diet, and lifestyle blocks to map out a clear path forward.</p>
+                </div>
+
+                <div class="relative z-10 bg-brand-dark px-4 text-center">
+                    <div class="w-16 h-16 mx-auto bg-brand-card border-2 border-brand-gold rounded-full flex items-center justify-center text-brand-gold font-bold text-xl mb-4">2</div>
+                    <h4 class="font-bold text-lg mb-2">Get Your Blueprint</h4>
+                    <p class="text-sm text-gray-400">Receive your tailored H.A.R.M.O.N.Y framework including custom nutrition and fitness planning.</p>
+                </div>
+
+                <div class="relative z-10 bg-brand-dark px-4 text-center">
+                    <div class="w-16 h-16 mx-auto bg-brand-card border-2 border-brand-gold rounded-full flex items-center justify-center text-brand-gold font-bold text-xl mb-4">3</div>
+                    <h4 class="font-bold text-lg mb-2">Execute with Support</h4>
+                    <p class="text-sm text-gray-400">Daily accountability, weekly check-ins, and direct access to ensure you never fall off track.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Video Testimonials & Results -->
+    <section id="transformations" class="py-20 bg-brand-card/30 border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs uppercase tracking-widest text-brand-gold font-bold">Verified Proof</span>
+                <h2 class="font-sans text-3xl sm:text-5xl font-extrabold mt-2">Real Women, Real Stories</h2>
+                <p class="text-gray-400 text-sm sm:text-base mt-3 font-medium">Hear directly from women who recalibrated their bodies and regained their confidence.</p>
+            </div>
+
+            <!-- Video Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Video 1 -->
+                <div class="rounded-2xl bg-brand-card border border-brand-cardBorder overflow-hidden group cursor-pointer hover:border-brand-gold/50 transition-all">
+                    <div class="relative h-48 w-full bg-gray-900 overflow-hidden">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/20SQ6k-N130?si=tEAVVo4sN7J_abvZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-white text-lg">Vidhi | Age 26</h3>
+                            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">PCOS Reversal</span>
+                        </div>
+                        <p class="text-xs text-brand-gold font-bold mb-3 uppercase tracking-wider">Lost 8 Kgs in 90 Days</p>
+                        <p class="text-sm text-gray-300 leading-relaxed font-medium italic">"My periods are completely pain-free, and I no longer crash during workday afternoons."</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="rounded-2xl bg-brand-card border border-brand-cardBorder overflow-hidden group cursor-pointer hover:border-brand-gold/50 transition-all">
+                    <div class="relative h-48 w-full bg-gray-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Sarika Video Thumbnail" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-all group-hover:scale-105">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-brand-gold rounded-full flex items-center justify-center pl-1 shadow-[0_0_15px_rgba(212,175,55,0.5)] group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"/></svg>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black/60 px-2 py-1 rounded text-[10px] font-bold text-white tracking-widest uppercase backdrop-blur-sm">2:15</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-white text-lg">Sarika | Age 33</h3>
+                            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">Digestive Reset</span>
+                        </div>
+                        <p class="text-xs text-brand-gold font-bold mb-3 uppercase tracking-wider">Lost 7 Kgs in 80 Days</p>
+                        <p class="text-sm text-gray-300 leading-relaxed font-medium italic">"Fixed severe gut bloating and mood swings naturally while retaining high office energy."</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="rounded-2xl bg-brand-card border border-brand-cardBorder overflow-hidden group cursor-pointer hover:border-brand-gold/50 transition-all">
+                    <div class="relative h-48 w-full bg-gray-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" alt="Disha Video Thumbnail" class="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-all group-hover:scale-105">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-14 h-14 bg-brand-gold rounded-full flex items-center justify-center pl-1 shadow-[0_0_15px_rgba(212,175,55,0.5)] group-hover:scale-110 transition-transform">
+                                <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"/></svg>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-black/60 px-2 py-1 rounded text-[10px] font-bold text-white tracking-widest uppercase backdrop-blur-sm">0:58</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-white text-lg">Disha | Age 34</h3>
+                            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider">Full Reset</span>
+                        </div>
+                        <p class="text-xs text-brand-gold font-bold mb-3 uppercase tracking-wider">Lost 12 Kgs in 90 Days</p>
+                        <p class="text-sm text-gray-300 leading-relaxed font-medium italic">"Balanced hormonal skin flare-ups, smooth period cycles, and restored athletic posture."</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Comparison Table Section -->
+    <section class="py-20 border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold">Why Fitness is Luxury is Different</h2>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="p-4 border-b border-white/10 text-gray-400 font-semibold w-1/3">Features</th>
+                            <th class="p-4 border-b border-white/10 font-bold text-white w-1/3 text-center bg-brand-card rounded-tl-xl rounded-tr-xl">Fitness is Luxury</th>
+                            <th class="p-4 border-b border-white/10 text-gray-500 font-semibold w-1/3 text-center">Standard Gyms</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr>
+                            <td class="p-4 border-b border-white/5 text-gray-300">Nutrition Approach</td>
+                            <td class="p-4 border-b border-white/5 text-brand-gold font-bold text-center bg-brand-card">Home Indian Meals</td>
+                            <td class="p-4 border-b border-white/5 text-gray-500 text-center">Boiled Chicken & Broccoli</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 border-b border-white/5 text-gray-300">Hormone Focus</td>
+                            <td class="p-4 border-b border-white/5 text-brand-gold font-bold text-center bg-brand-card">PCOS/Thyroid Specific</td>
+                            <td class="p-4 border-b border-white/5 text-gray-500 text-center">Ignored completely</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 border-b border-white/5 text-gray-300">Accountability</td>
+                            <td class="p-4 border-b border-white/5 text-brand-gold font-bold text-center bg-brand-card">Daily WhatsApp Support</td>
+                            <td class="p-4 border-b border-white/5 text-gray-500 text-center">Once a week (maybe)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 border-b border-white/5 text-gray-300">Workout Duration</td>
+                            <td class="p-4 border-b border-white/5 text-brand-gold font-bold text-center bg-brand-card rounded-bl-xl rounded-br-xl">30-45 Min Efficiency</td>
+                            <td class="p-4 border-b border-white/5 text-gray-500 text-center">2+ Hours of Cardio</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Cal.com Embedded Booking Section -->
+    <section id="strategy-call" class="py-20 bg-gradient-to-b from-brand-dark via-amber-950/10 to-brand-dark border-b border-white/5">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <span class="text-xs font-bold text-brand-gold uppercase tracking-widest">Private Strategy Session</span>
+            <h2 class="font-sans text-3xl sm:text-5xl font-extrabold mt-2">Book Your 60-Minute Lifestyle Roadmap</h2>
+            <p class="text-gray-300 text-sm sm:text-base mt-4 leading-relaxed max-w-2xl mx-auto mb-10 font-medium">
+                Select a time below that works best for your schedule. We will break down your current hormonal markers, diet struggles, and busy routine to create a clear action plan.
+            </p>
+
+            <!-- Cal.com embed wrapper -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-2xl mx-auto border border-brand-gold/20" style="max-width: 900px; height: 650px;">
+                <!-- Cal inline embed code begin -->
+                <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-strategy"></div>
+                <script type="text/javascript">
+                  (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+                  Cal("init", "strategy", {origin:"https://app.cal.com"});
+                  Cal.ns["strategy"]("inline", {
+                    elementOrSelector: "#my-cal-inline-strategy",
+                    config: {
+                      layout: "month_view",
+                      theme: "light"
+                    },
+                    calLink: "fitnessisluxury/freeharmonystrategycall",
+                  });
+                  Cal.ns["strategy"]("ui", {"hideEventTypeDetails": false, "layout": "month_view"});
+                </script>
+                <!-- Cal inline embed code end -->
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: FAQ Section -->
+    <section id="faq" class="py-20 bg-brand-card/30 border-b border-white/5">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-sans text-3xl sm:text-4xl font-extrabold">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="p-6 bg-brand-dark rounded-xl border border-white/5 hover:border-brand-gold/30 transition-all cursor-pointer group">
+                    <h4 class="font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Do I have to give up eating Indian food?</h4>
+                    <p class="text-sm text-gray-400 font-medium leading-relaxed">Absolutely not. Our nutritional frameworks are built around eating home-cooked meals including roti, rice, and dal. We focus on macros and balance, not restriction.</p>
+                </div>
+                <div class="p-6 bg-brand-dark rounded-xl border border-white/5 hover:border-brand-gold/30 transition-all cursor-pointer group">
+                    <h4 class="font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">I travel often for work. Will this still work for me?</h4>
+                    <p class="text-sm text-gray-400 font-medium leading-relaxed">Yes. We provide specific 'dining-out' and 'travel' frameworks so you know exactly how to order at restaurants and hotels without breaking your progress.</p>
+                </div>
+                <div class="p-6 bg-brand-dark rounded-xl border border-white/5 hover:border-brand-gold/30 transition-all cursor-pointer group">
+                    <h4 class="font-bold text-white mb-2 group-hover:text-brand-gold transition-colors">Do I need a gym membership?</h4>
+                    <p class="text-sm text-gray-400 font-medium leading-relaxed">It is optional. We customize the workout plans based on what you have available, whether that is a full gym, dumbbells at home, or purely bodyweight.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10 bg-brand-dark text-xs text-gray-400 font-medium">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full border border-brand-gold/50 flex items-center justify-center bg-brand-card text-brand-gold font-sans font-extrabold">
+                    F
+                </div>
+                <span class="font-sans font-extrabold text-white tracking-wider">FITNESS IS LUXURY</span>
+            </div>
+            <p>&copy; 2026 Fitness is Luxury by Rushali Chaudhary. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-brand-gold transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-brand-gold transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
